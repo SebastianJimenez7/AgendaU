@@ -1,0 +1,8 @@
+<resources>
+    <style name="Theme.AgendaU" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/navy</item>
+        <item name="colorSecondary">@color/orange</item>
+        <item name="android:statusBarColor">@color/navy</item>
+        <item name="android:windowBackground">@color/bg</item>
+    </style>
+</resources>
