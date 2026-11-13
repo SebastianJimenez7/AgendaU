@@ -3,13 +3,24 @@ package com.agendau.app
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.core.os.LocaleListCompat
 import androidx.fragment.app.Fragment
+import com.agendau.app.ui.CalendarioFragment
+import com.agendau.app.ui.InicioFragment
+import com.agendau.app.ui.MateriasFragment
+import com.agendau.app.ui.TareasFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+
+        // La app siempre se muestra en español, sin importar el idioma del celular
+        if (AppCompatDelegate.getApplicationLocales().isEmpty) {
+            AppCompatDelegate.setApplicationLocales(LocaleListCompat.forLanguageTags("es-CO"))
+        }
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 

@@ -19,11 +19,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
                 android:text="Hola, estudiante"
                 android:textColor="@color/navy"
                 android:textSize="24sp"
                 android:textStyle="bold" />
-
             <TextView
                 android:id="@+id/txtResumen"
                 android:layout_width="wrap_content"
@@ -36,11 +37,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
+                android:layout_marginBottom="0dp"
                 android:text="Próximos días"
                 android:textColor="@color/navy"
                 android:textSize="18sp"
                 android:textStyle="bold" />
-
             <LinearLayout
                 android:id="@+id/franjaDias"
                 android:layout_width="match_parent"
@@ -49,6 +50,7 @@
                 android:orientation="horizontal" />
 
             <TextView
+                android:id="@+id/txtTituloLista"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
@@ -57,7 +59,6 @@
                 android:textColor="@color/navy"
                 android:textSize="18sp"
                 android:textStyle="bold" />
-
             <LinearLayout
                 android:id="@+id/listaPendientes"
                 android:layout_width="match_parent"

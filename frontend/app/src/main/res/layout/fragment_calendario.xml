@@ -9,45 +9,68 @@
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:layout_marginBottom="0dp"
-            android:text="Noviembre 2026"
-            android:textColor="@color/navy"
-            android:textSize="24sp"
-            android:textStyle="bold" />
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAnterior"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="‹"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtMes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/navy"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="›"
+                android:textSize="24sp" />
+        </LinearLayout>
 
         <GridLayout
             android:id="@+id/gridDias"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="14dp"
+            android:layout_marginTop="8dp"
             android:columnCount="7" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:text="Naranja: hoy. Azul claro: día con entregas."
+            android:text="Naranja: hoy. Azul oscuro: día elegido. Azul claro: día con tareas."
             android:textColor="@color/mute"
             android:textSize="13sp" />
 
         <TextView
+            android:id="@+id/txtTituloDia"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="22dp"
             android:layout_marginBottom="10dp"
-            android:text="Próximas entregas"
             android:textColor="@color/navy"
             android:textSize="18sp"
             android:textStyle="bold" />
+
         <LinearLayout
-            android:id="@+id/listaProximas"
+            android:id="@+id/listaDia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
             android:orientation="vertical" />
     </LinearLayout>
 </ScrollView>
