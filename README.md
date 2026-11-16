@@ -47,11 +47,11 @@ El código fuente está en `frontend/app/src/main/java/com/agendau/app/` y se di
 
 ## Capturas
 
-![Pantalla de Inicio](image-6.png)
-![Pantalla de tareas](image-1.png)
-![Formulario de nueva tarea](image.png)
-![Calendario](image-7.png)
-![Materias](image-8.png)
+![Pantalla de Inicio](Capturas/image-6.png)
+![Pantalla de tareas](Capturas/image-1.png)
+![Formulario de nueva tarea](Capturas/image.png)
+![Calendario](Capturas/image-7.png)
+![Materias](Capturas/image-8.png)
 
 ## Estado del proyecto
 
