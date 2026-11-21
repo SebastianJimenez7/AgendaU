@@ -1,0 +1,12 @@
+Resultados de la red neuronal de AgendaU
+
+Precisión en entrenamiento: 79.17%
+Precisión en prueba: 80.00%
+
+dias  horas  prioridad  tareas  ->  probabilidad de entregar a tiempo
+   1      1          1       8  ->  0.07 (7%)   Poco tiempo, pocas horas, muchas tareas
+   5      4          1       5  ->  0.44 (44%)   Tiempo medio, horas medias
+  10      7          1       3  ->  0.96 (96%)   Buen margen y buena dedicación
+  12      8          2       2  ->  0.99 (99%)   Prioridad alta con tiempo y dedicación
+
+Diferencia máxima entre Keras y el cálculo manual: 0.00000010
