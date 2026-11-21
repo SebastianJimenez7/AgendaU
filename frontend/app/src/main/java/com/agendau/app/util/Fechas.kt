@@ -15,6 +15,13 @@ object Fechas {
     // Como el formato es yyyy-MM-dd, comparar los textos equivale a comparar las fechas
     fun esAnteriorAHoy(fecha: String): Boolean = fecha < hoy()
 
+    // Días que faltan desde hoy hasta la fecha (negativo si ya pasó)
+    fun diasHasta(fecha: String): Int {
+        val destino = formatoBd.parse(fecha) ?: return 0
+        val inicio = formatoBd.parse(hoy()) ?: return 0
+        return Math.round((destino.time - inicio.time) / 86400000.0).toInt()
+    }
+
     fun legible(fecha: String): String {
         val date = formatoBd.parse(fecha) ?: return fecha
         return SimpleDateFormat("EEEE d 'de' MMMM", local).format(date).replaceFirstChar { it.uppercase() }

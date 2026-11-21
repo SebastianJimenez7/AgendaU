@@ -4,4 +4,5 @@
     <item android:id="@+id/nav_tareas" android:icon="@drawable/ic_tareas" android:title="Tareas" />
     <item android:id="@+id/nav_calendario" android:icon="@drawable/ic_calendario" android:title="Calendario" />
     <item android:id="@+id/nav_materias" android:icon="@drawable/ic_materias" android:title="Materias" />
+    <item android:id="@+id/nav_asistente" android:icon="@drawable/ic_asistente" android:title="Asistente" />
 </menu>

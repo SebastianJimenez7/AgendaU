@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
 import androidx.fragment.app.Fragment
+import com.agendau.app.ui.AsistenteFragment
 import com.agendau.app.ui.CalendarioFragment
 import com.agendau.app.ui.InicioFragment
 import com.agendau.app.ui.MateriasFragment
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_tareas -> mostrar(TareasFragment())
                 R.id.nav_calendario -> mostrar(CalendarioFragment())
                 R.id.nav_materias -> mostrar(MateriasFragment())
+                R.id.nav_asistente -> mostrar(AsistenteFragment())
             }
             true
         }
