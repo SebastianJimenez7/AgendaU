@@ -1,0 +1,5 @@
+# Se recomienda Python 3.10, 3.11 o 3.12
+tensorflow
+numpy
+flask
+matplotlib
