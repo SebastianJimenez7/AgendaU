@@ -43,10 +43,10 @@ Se usa la **API de Gemini de Google** (Google AI Studio), mediante el método `g
 
 ### Evidencias de la IA
 
-![Pantalla del asistente](image.png)
-![Resultado de Interpretar con IA](image-1.png)
-![Tarea guardada](image-2.png)
-![Plan de estudio](Capturas/fase3/ia-plan.png)
+![Pantalla del asistente](Capturas/FaseFinal/asistente.png)
+![Resultado de Interpretar con IA](Capturas/FaseFinal/ia-resultado.png)
+![Tarea guardada](Capturas/FaseFinal/tarea-guardada.png)
+![Plan de estudio](Capturas/FaseFinal/plan-de-estudio.jpeg)
 
 ## Red neuronal
 
@@ -74,10 +74,10 @@ La red se expone con una API en Flask (`backend/api.py`). La app Android envía 
 
 ### Evidencias de la red neuronal
 
-![Entrenamiento en la terminal](image-3.png)
+![Entrenamiento en la terminal](Capturas/FaseFinal/entrenamiento-api-respuesta.png)
 ![Gráfica del entrenamiento](backend/evidencias/entrenamiento.png)
-![Respuesta de la API y validación](image-4.png)
-![Riesgo de entrega en la app](image-5.png)
+![Respuesta de la API y validación](Capturas/FaseFinal/api-validacion.png)
+![Riesgo de entrega en la app](Capturas/FaseFinal/red-neuronal.png)
 
 ## Validaciones y manejo de errores
 
@@ -89,8 +89,7 @@ La red se expone con una API en Flask (`backend/api.py`). La app Android envía 
 
 ### Evidencias del manejo de errores
 
-![Error del servicio de IA](image-7.png)
-![Error del servidor de la red neuronal](image-6.png)
+![Error del servicio de IA](Capturas/FaseFinal/ia-error.png)
 
 ## Pruebas realizadas
 
@@ -133,7 +132,7 @@ La red se expone con una API en Flask (`backend/api.py`). La app Android envía 
 1. Clonar este repositorio.
 2. Obtener una clave gratuita en https://aistudio.google.com/apikey
 3. Abrir la carpeta `frontend` con Android Studio y esperar la sincronización de Gradle.
-4. Agregar estas líneas al final del archivo `local.properties` (este archivo no se sube al repositorio, por lo que la clave no queda expuesta):
+4. Agregar estas líneas al final del archivo `local.properties`:
 
 ```
 GEMINI_API_KEY=tu_clave
